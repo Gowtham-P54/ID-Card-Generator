@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student ID Card Generator</h2>
+        <form id="idCardForm">
+            <label for="collegeName">College Name:</label>
+            <input type="text" id="collegeName" required><br>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required><br>
+
+            <label for="studentAddress">Student Address:</label>
+            <input type="text" id="studentAddress" required><br>
+
+            <label for="bloodGroup">Blood Group:</label>
+            <input type="text" id="bloodGroup" required><br>
+
+            <label for="section">Section:</label>
+            <input type="text" id="section" required><br>
+
+            <label for="collegeEmail">College Email:</label>
+            <input type="email" id="collegeEmail" required><br>
+
+            <label for="collegeContact">College Contact No:</label>
+            <input type="text" id="collegeContact" required><br>
+
+            <label for="studentMobile">Student Mobile No:</label>
+            <input type="text" id="studentMobile" required><br>
+
+            <label for="studentPhoto">Upload Photo:</label>
+            <input type="file" id="studentPhoto" accept="image/*" required><br>
+
+            <button type="button" onclick="generateIDCard()">Generate ID Card</button>
+            <button type="button" onclick="printIDCard()">Print ID Card</button>
+        </form>
+
+        <div class="id-card" id="idCard">
+            <div class="id-card-header" id="collegeNameDisplay"></div>
+            <div class="id-card-body">
+                <img id="studentPhotoDisplay" class="student-photo" src="" alt="Student Photo">
+                <p><strong>Name:</strong> <span id="studentNameDisplay"></span></p>
+                <p><strong>Address:</strong> <span id="studentAddressDisplay"></span></p>
+                <p><strong>Blood Group:</strong> <span id="bloodGroupDisplay"></span></p>
+                <p><strong>Section:</strong> <span id="sectionDisplay"></span></p>
+                <p><strong>College Email:</strong> <span id="collegeEmailDisplay"></span></p>
+                <p><strong>College Contact:</strong> <span id="collegeContactDisplay"></span></p>
+                <p><strong>Student Mobile:</strong> <span id="studentMobileDisplay"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
